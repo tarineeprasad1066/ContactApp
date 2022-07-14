@@ -1,2 +1,26 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+<div class="bgimg">
+<div class="navbar">
+  <%= link_to "Contact App", root_path, method: :get %>
+  <%= link_to 'Log In', new_user_session_path, method: :get, class: 'right' %>
+  <%= link_to 'Sign Up', new_user_registration_path, method: :get, class: 'right' %>
+</div>
+
+  <div class="middle">
+    <h2><b>Welcome to Contact App</b></h2>
+    <p>Welcome to Contact App. The best application in which you can create your contact archive!
+Do not hesitate to get started. Create an account to start the trip with us...👧👍👍👧</p>
+     
+     <p><%= link_to "Sign Up Today", new_user_registration_path, class: "button button1" %></p>
+  </div>
+</div>
+
+</body>
+</html>
