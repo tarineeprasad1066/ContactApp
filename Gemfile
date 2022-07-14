@@ -71,3 +71,5 @@ group :test do
   gem "webdrivers"
 end
 gem "devise"
+gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
+gem 'paperclip', '~> 6.1'
